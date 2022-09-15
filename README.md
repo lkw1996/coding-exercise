@@ -1,11 +1,13 @@
+# To start a program
+
+git clone -> npm install -> npm start
+
 # There are 4 different components.
 
-1. AirlineGrid : display the layout (structure) of the page
+1. AirlineGrid : dispaly a layout of the page
 
-2. AirlinesGridItem : display the actual data for each tile
+2. AirlinesGridItem : display the data for each tile
 
-3. AllianceFilters : display 3 checkboxes
+3. AllianceFilters : filtered data by clicking each checkbox
 
-EXTRA
-
-4. Pagination : I have limited the amount of data display on screen to help reduce the weight of the page. (MAX : 12 items)
+4. Pagination : MAX : limited the amount of data dispalyed on screen (12 items)
