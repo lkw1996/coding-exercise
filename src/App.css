@@ -1,0 +1,195 @@
+/* Common */
+
+body {
+  font-family: HelveticaNeue;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+/* Logo */
+
+.logo {
+  margin: 19px 0 19px 16px;
+}
+
+/* Common Display */
+.display-container {
+  background-color: #f9fafb;
+
+  padding: 67px 94px;
+}
+
+.title {
+  font-size: 44px;
+  font-weight: 900;
+  color: #000000;
+}
+
+.filter-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #192024;
+
+  margin: 73px 0 23px 0;
+}
+
+/* Filter Option : Checkbox */
+
+.form-check {
+  margin-bottom: 56px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.form-check-label {
+  font-size: 14px;
+  font-weight: normal;
+  color: #192024;
+}
+
+.form-check-label:not(:last-child) {
+  margin-right: 24px;
+}
+
+/* Actual data container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-gap: 16px;
+}
+
+.info-container {
+  width: 300px;
+  height: 240px;
+
+  border-radius: 8px;
+  box-shadow: 0 -1px 4px 0 rgba(25, 32, 36, 0.04),
+    0 3px 6px 0 rgba(25, 32, 36, 0.16);
+}
+
+.info-container:hover {
+  border: solid 1px #363f45;
+}
+
+.info-container:hover .airline-name {
+  font-size: 14px;
+}
+
+.info-container-item {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  justify-content: center;
+
+  padding: 0 10px;
+}
+
+/* Actual Data inside container */
+
+.airline-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.extra-info-container > * {
+  padding: 2px;
+  margin: 2px;
+}
+
+.airline-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #192024;
+}
+
+.img-container {
+  margin-right: 18px;
+}
+
+.alliance-name {
+  font-size: 14px;
+  font-weight: normal;
+  color: #192024;
+}
+
+.extra-info {
+  font-size: 14px;
+  font-weight: normal;
+  color: #5a6872;
+
+  word-break: break-all;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  margin-top: 56px;
+}
+
+.pagination li {
+  list-style-type: none;
+  color: black;
+
+  border: 1px solid #ddd;
+}
+
+.pagination li.active {
+  background-color: darkorange;
+  border: 1px solid darkorange;
+}
+
+.pagination li.active a {
+  color: white;
+}
+
+.pagination li:hover:not(.active) {
+  box-shadow: 0 -1px 4px 0 rgba(25, 32, 36, 0.04),
+    0 3px 6px 0 rgba(25, 32, 36, 0.16);
+}
+
+.pagination li:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.pagination li:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #192024;
+  display: block;
+  padding: 8px 16px;
+}
+
+.pagination button {
+  border: none;
+  background: none;
+  padding: 8px 16px;
+}
+
+/* Responsive Layout */
+@media only screen and (max-width: 1420px) {
+  .grid-container {
+    grid-template-columns: 300px 300px 300px;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .grid-container {
+    grid-template-columns: 300px 300px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .grid-container {
+    grid-template-columns: 300px;
+  }
+}
